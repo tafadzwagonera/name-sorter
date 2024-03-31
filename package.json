@@ -2,6 +2,9 @@
   "name": "name-sorter",
   "version": "0.0.1",
   "description": "",
+  "bin": {
+    "name-sorter": "./dist/main.js"
+  },
   "author": "",
   "private": true,
   "license": "UNLICENSED",
