@@ -1,0 +1,41 @@
+name: Lint and Test
+on: [push]
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Run linters
+        run: npm run format
+
+  run-tests:
+    name: Run unit tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm run test:unit
