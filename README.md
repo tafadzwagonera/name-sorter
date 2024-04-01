@@ -1,4 +1,4 @@
-# Neame Sorter CLI
+# Name Sorter CLI
 
 This repository contains a CLI implementation for sorting names in a given text file. It uses [NestJS](https://nestjs.com/) and [Nest Commander](https://nest-commander.jaymcdoniel.dev/en/introduction/intro/).
 
