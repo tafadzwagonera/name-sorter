@@ -70,3 +70,5 @@ secrets.sh
 # dotenv environment variables file
 .env
 .env.testing
+
+sorted-names.txt
