@@ -3,7 +3,7 @@
 This repository contains a CLI implementation for sorting names in a given text file. It uses [NestJS](https://nestjs.com/) and [Nest Commander](https://nest-commander.jaymcdoniel.dev/en/introduction/intro/).
 
 ### Why use NestJS?
-In software development, like with anything else, every tool has its pros and cons, and NestJS is no exception. There are areas where a tool will excel or falter, and that's acceptable because our goal isn't to find the absolute best tool, but rather one that propels us forward efficiently in the solution space. NestJS emerged as the preferred choice over other options such as AdonisJS or ExpressJS. 
+In software development, like with anything else, every tool has its pros and cons, and NestJS is no exception. There are areas where a tool will excel or falter, and that's acceptable because our goal isn't to find the absolute best tool but one that's sufficient to do the job reasonably well. 
 
 - NestJS is a popular JavaScript framework which enjoys wide adoption in the community. It's been battle-tested and is supported by a mature segment of the  community. This means that picking up the framework is a boon for (less-)experienced developers because documentation, dependencies and examples are accessible.
 - NestJS takes an opinionated stance about how you approach building applications. While this stiffles creativity, control and flexibility, the framework trades that off with structure and convention which are important for delivery, maintainability and developer experience.
@@ -71,7 +71,7 @@ At this point the CLI application should be running and ready to your input.
 $ name-sorter unsorted-names-list.txt # You can provide a `.txt` file with a different name that is local the repository.
 ```
 
-Alternatively you can also run the CLI application without packaging the CLI with NPM. All you need to do it `build` and `run` the application as would any other application.
+Alternatively you can also run the CLI application without packaging the CLI with NPM. All you need to do it `build` and `run` the application as you would any other application.
 
 ```bash
 $ cd ~/path/to/name-sorter # Verify that you're in `name-sorter` directory
