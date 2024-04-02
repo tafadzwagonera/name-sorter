@@ -12,29 +12,30 @@ In software development, like with anything else, every tool has its pros and co
 - [Installation](#installation)
 - [How to Run](#how-to-run)
 - [Assumptions and Considerations](#assumptions-and-considerations)
-- [Running Test](#running-tests)
+- [Running Tests](#running-tests)
 
 ## Installation
 
 1. Install Node.js version `>= v20.10.0`. If you don't have node.js `>= v20.10.0` readily installed you can install NVM as per the following [instructions](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating). Once NVM is installed you can follow the instructions below to install a compatible Node.js version. You can check the available versions using `nvm ls-remote` and choose a version from the list.
 
 ```bash
-nvm use 20.10.0
-nvm alias default 20.10.0
+$ nvm use 20.10.0
+$ nvm alias default 20.10.0
 # You'll need to restart your `bash` session with `source ~/.bashrc` for each window (you'll need to terminate successive tabs associated with each window) or by closing and starting a new Terminal application.
 ```
 
 2. Now that you've the correct Node.js version install you can `git clone` the repository.
 
 ```bash
-  git clone git@github.com:tafadzwagonera/name-sorter.git
+$ git clone git@github.com:tafadzwagonera/name-sorter.git
 ```
 
 3. Install dependencies.
 
 ```bash
-cd ~/path/to/name-sorter # Verify that you're in `name-sorter` directory.
-npm i
+$ cd ~/path/to/name-sorter # Verify that you're in `name-sorter` directory.
+$ pwd # Verify that you're in `/path/to/frontend-test-tafadzwagonera` directory.
+$ npm i
 ```
 
 Now that you've everything set up it's time to run the application
@@ -44,7 +45,7 @@ Now that you've everything set up it's time to run the application
 To run the CLI application, use the following commands
 
 ```bash
-$ pwd # Verify that you're in `name-sorter` directory
+$ pwd # Verify that you're in `path/to/name-sorter` directory otherwise `cd ~/path/to/name-sorter`
 $ npm run build
 $ npm i -g . # Install the CLI as an global package
 $ npm ls -g --depth=0 # Verify if the page is installed. See Exhibit 1
